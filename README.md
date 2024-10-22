@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Bank Account
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Title and Description
+Bank-Account is a web application designed to manage customers and account operations using Redux for state management. Users can create customers, manage account balances, and perform basic banking operations.
 
-## Available Scripts
+## Badges
+![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
-In the project directory, you can run:
+## Quick Look
+<img src="https://github.com/user-attachments/assets/7Bq5E654Sxe5PruoyyXC2Vqy" width="700" alt="Redux-Intro App Demo">
 
-### `npm start`
+## Table of Content
+- [Project Title and Description](#project-title-and-description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Demo (link)](#demo-link)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Third-Party Libraries](#third-party-libraries)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Create and manage customers with a name and national ID.
+- Perform banking operations: deposit, withdraw, request a loan, and pay back a loan.
+- Display account balance and loan status.
+- Simple and intuitive user interface with Redux for state management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
+- Node.js (v12 or higher)
+- npm (v6 or higher)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps
 
-### `npm run build`
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/petrmichal0/bankAccount.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
+    ```bash
+    cd bankAccount
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+To start the application, run the following command:
+```bash
+npm start
+```
 
-### `npm run eject`
+After starting, go to [http://localhost:3000](http://localhost:3000) in your web browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
+![image]()
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<table> 
+  <tr> 
+    <th>Create Customer</th> 
+    <th>Account Operations</th> 
+  </tr> 
+  <tr> 
+    <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
+      <a href="https://github.com/user-attachments/assets/1515725e-ed02-4c37-8442-7062abe6a4b5" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/1515725e-ed02-4c37-8442-7062abe6a4b5" width="300" height="300" alt="Create Customer"> 
+      </a> 
+    </td> 
+    <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
+      <a href="https://github.com/user-attachments/assets/14bfcb57-6b96-44f7-aec0-430e139eb57f" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/14bfcb57-6b96-44f7-aec0-430e139eb57f" width="300" height="300" alt="Account Operations"> 
+      </a> 
+    </td> 
+  </tr> 
+</table>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo (link)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Check out the live demo of the application [here](https://bankaccountv1.netlify.app).
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```css
+bankAccount/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── robots.txt
+├── src/
+│   ├── features/
+│   │   ├── accounts/
+│   │   │   ├── AccountOperations.js
+│   │   │   ├── BalanceDisplay.js
+│   │   │   ├── accountSlice.js
+│   │   ├── customers/
+│   │   │   ├── CreateCustomer.js
+│   │   │   ├── Customer.js
+│   │   │   ├── customerSlice.js
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   ├── store.js
+├── .gitignore
+├── README.md
+├── package-lock.json
+├── package.json
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![Redux Badge](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&labelColor=black&logo=redux&logoColor=764ABC)](#)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Third-Party Libraries
 
-### Analyzing the Bundle Size
+- **Redux Toolkit**: For efficient Redux development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the LICENSE file for details.
