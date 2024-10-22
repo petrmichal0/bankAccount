@@ -5,7 +5,7 @@ Bank-Account is a web application designed to manage customers and account opera
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
 ## Quick Look
-<img src="https://github.com/user-attachments/assets/7Bq5E654Sxe5PruoyyXC2Vqy" width="700" alt="Redux-Intro App Demo">
+<img src="https://github.com/user-attachments/assets/45227df4-da5a-42f1-98b2-605b58154834" width="700" alt="Bank Account">
 
 ## Table of Content
 - [Project Title and Description](#project-title-and-description)
