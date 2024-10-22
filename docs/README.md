@@ -57,7 +57,6 @@ npm start
 After starting, go to [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ## Screenshots
-![image]()
 
 <table> 
   <tr> 
