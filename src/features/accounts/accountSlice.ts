@@ -1,12 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { AppDispatch } from "../../store";
 
-interface AccountState {
+type AccountState = {
   balance: number;
   loan: number;
   loanPurpose: string;
   isLoading: boolean;
-}
+};
 
 const initialState: AccountState = {
   balance: 0,

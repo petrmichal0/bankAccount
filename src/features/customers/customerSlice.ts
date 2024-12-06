@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface CustomerState {
+type CustomerState = {
   fullName: string;
   nationalID: string;
   createdAt: string;
-}
+};
 
 const initialState: CustomerState = {
   fullName: "",
