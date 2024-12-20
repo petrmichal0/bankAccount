@@ -41,6 +41,7 @@ const accountSlice = createSlice({
       },
     },
     payLoan(state) {
+      if (state.balance < state.loan) return;
       state.balance -= state.loan;
       state.loan = 0;
       state.loanPurpose = "";

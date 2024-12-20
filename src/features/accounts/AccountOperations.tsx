@@ -16,6 +16,7 @@ function AccountOperations() {
     loan: currentLoan,
     loanPurpose: currentLoanPurpose,
     isLoading,
+    balance,
   } = useSelector((store: RootState) => store.account);
 
   function handleDeposit() {
@@ -100,7 +101,17 @@ function AccountOperations() {
             <span>
               Pay back ${currentLoan} ({currentLoanPurpose})
             </span>
-            <button onClick={handlePayLoan}>Pay loan</button>
+            <button
+              onClick={handlePayLoan}
+              disabled={balance < currentLoan}
+              title={
+                balance < currentLoan
+                  ? "You don't have enough balance to pay the loan. "
+                  : ""
+              }
+            >
+              Pay loan
+            </button>
           </div>
         )}
       </div>
