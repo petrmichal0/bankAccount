@@ -101,7 +101,15 @@ function AccountOperations() {
             <span>
               Pay back ${currentLoan} ({currentLoanPurpose})
             </span>
-            <button onClick={handlePayLoan} disabled={balance < currentLoan}>
+            <button
+              onClick={handlePayLoan}
+              disabled={balance < currentLoan}
+              title={
+                balance < currentLoan
+                  ? "You don't have enough balance to pay the loan."
+                  : ""
+              }
+            >
               Pay loan
             </button>
           </div>
