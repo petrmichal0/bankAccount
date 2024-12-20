@@ -106,7 +106,7 @@ function AccountOperations() {
               disabled={balance < currentLoan}
               title={
                 balance < currentLoan
-                  ? "You don't have enough balance to pay the loan."
+                  ? "You don't have enough balance to pay the loan. "
                   : ""
               }
             >
