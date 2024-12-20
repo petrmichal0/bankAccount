@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["jest", "@testing-library/jest-dom"],
+    "types": ["jest", "@testing-library/jest-dom", "node"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "target": "es6",
