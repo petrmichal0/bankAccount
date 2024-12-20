@@ -17,7 +17,9 @@ describe("App component", () => {
       </Provider>
     );
 
-    const headerElement = screen.getByText("🏦 The React-Redux Bank ⚛️");
+    const headerElement = screen.getByRole("heading", {
+      name: "🏦 The React-Redux Bank ⚛️",
+    });
     expect(headerElement).toBeInTheDocument();
   });
 
@@ -52,7 +54,7 @@ describe("App component", () => {
 
     const welcomeMessage = screen.getByText(/👋 Welcome, John Doe/i);
     const accountOperations = screen.getByText(/Your account operations/i);
-    const balanceDisplay = screen.getByText(/\$/i);
+    const balanceDisplay = screen.getByText(/\$100/i);
 
     expect(welcomeMessage).toBeInTheDocument();
     expect(accountOperations).toBeInTheDocument();
